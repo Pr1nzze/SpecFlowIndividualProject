@@ -19,6 +19,9 @@ namespace SpecFlowIndividualProject.NewFolder
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("start-maximized", "incognito");
+            //options.AddArguments(" - - no- sandbox");
+            //options.AddArguments(" - -disable-dev-shm-usage ");
+            //options.AddArgument(" - -headless ");
             Driver = new ChromeDriver(options);
             container.RegisterInstanceAs(Driver);
         }
