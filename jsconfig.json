@@ -1,0 +1,20 @@
+{
+  "env": {
+    "url": "https://www.automationexercise.com/"
+  },
+  "UserDetails": {
+    "Name": "Prince",
+    "Email": "Prince@mp.com",
+    "Password": "Password@123",
+    "firstName": "Princely",
+    "lastName": "Doe",
+    "company": "CC LTD",
+    "address": "123",
+    "address2": "the chase",
+    "state": "Midlands",
+    "city": "Brum",
+    "zipcode": "WS199TU",
+    "mobileNumber": "07595915137"
+  }
+
+}
