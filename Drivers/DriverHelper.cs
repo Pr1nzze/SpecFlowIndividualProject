@@ -12,7 +12,7 @@ namespace SpecFlowIndividualProject.Drivers
     {
         public IWebDriver Driver;
 
-        //public void CloseAdIfPresent()
+        ////public void CloseAdIfPresent()
         //{
         //    try
         //    {
