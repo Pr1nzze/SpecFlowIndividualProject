@@ -23,12 +23,14 @@ namespace SpecFlowIndividualProject.NewFolder
             container.RegisterInstanceAs(Driver);
         }
 
-
         [AfterScenario]
         public void AfterScenario()
         {
-            Driver.Quit();  
-            Driver.Dispose();
+            if (Driver != null)
+            {
+                Driver.Quit();
+                Driver.Dispose();
+            }
         }
-    }
+    }  
 }

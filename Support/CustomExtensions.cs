@@ -32,7 +32,7 @@ namespace SpecFlowIndividualProject.Support
         /// <returns></returns>
         public static IWebElement FindThisElement(this IWebDriver driver, By locator) 
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
             wait.Until(ExpectedConditions.ElementToBeClickable(locator));
             return wait.Until(ExpectedConditions.ElementToBeClickable(locator));
         }
