@@ -40,7 +40,7 @@ namespace SpecFlowIndividualProject.Pages
         IWebElement city => Driver.FindThisElement(By.Id("city"));
         IWebElement zipcode => Driver.FindThisElement(By.Id("zipcode"));
         IWebElement mobileNumber => Driver.FindThisElement(By.XPath("//input[@id='mobile_number']"));
-        IWebElement submitButton => Driver.FindThisElement(By.XPath("(//button[@type='submit'])[1]"));
+        IWebElement createAccountButton => Driver.FindThisElement(By.XPath("(//button[@type='submit'])[1]"));
         IWebElement accountCreatedMessage => Driver.FindElement(By.XPath("//b[text()='Account Created!']"));
 
         public void ClickTitle() => title.ClickMyElement();
@@ -92,7 +92,11 @@ namespace SpecFlowIndividualProject.Pages
             selectYear.SelectByText(year);
         }
 
-        public void ClickToReceiveNewsLetter() => newsLetter.ClickMyElement();
+        public void ClickToReceiveNewsLetter()
+        {
+            By newsLetter  = By.Id("newsletter");
+            Driver.ScrollIntoViewAndClick(newsLetter);
+        }
         public void CLickToOptIn() => optin.ClickMyElement();
 
         public void SelectCountry(string uSA)
@@ -101,7 +105,11 @@ namespace SpecFlowIndividualProject.Pages
             selectCountry.SelectByText("United States");
         }
 
-        public void ClickSubmitButton() => submitButton.ClickMyElement();
+        public void ClickCreateAccountButton()
+        {
+            By createAccountButton = By.XPath("(//button[@type='submit'])[1]");
+            Driver.ScrollIntoViewAndClick(createAccountButton); 
+        }
 
         public IWebElement GetAccountCreatedMessageElement()
         {
