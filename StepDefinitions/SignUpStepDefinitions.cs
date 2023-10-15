@@ -73,7 +73,7 @@ namespace SpecFlowIndividualProject.StepDefinitions
         [When(@"I click Create Account button")]
         public void WhenIClickCreateAccountButton()
         {
-           signUpPage.ClickSubmitButton();
+           signUpPage.ClickCreateAccountButton();
         }
 
         [Then(@"ACCOUNT CREATED! text should be displayed")]
