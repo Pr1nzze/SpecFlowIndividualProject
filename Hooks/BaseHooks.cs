@@ -11,7 +11,7 @@ namespace SpecFlowIndividualProject.NewFolder
         IObjectContainer container;
         public BaseHooks(IObjectContainer _container)
         {
-            container = _container;
+            container = _container; //
         }
 
         [BeforeScenario]
