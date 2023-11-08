@@ -11,7 +11,7 @@ namespace SpecFlowIndividualProject.NewFolder
         IObjectContainer container;
         public BaseHooks(IObjectContainer _container)
         {
-            container = _container; //
+            container = _container; 
         }
 
         [BeforeScenario]
@@ -19,7 +19,7 @@ namespace SpecFlowIndividualProject.NewFolder
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("start-maximized", "incognito");
-           //options.AddArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+            options.AddArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
             Driver = new ChromeDriver(options);
             container.RegisterInstanceAs(Driver);
         }

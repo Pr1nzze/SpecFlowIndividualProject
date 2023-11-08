@@ -29,14 +29,5 @@ namespace SpecFlowIndividualProject.Pages
         }
 
         public void ClickDeleteAccount() => deleteAccount.ClickMyElement();
-
-        //public string GetAccountDeletedText()
-        //{
-        //    IWebElement accountDeletedText = Driver.FindThisElement(By.XPath("//b[text()='Account Deleted!']"));
-        //    return accountDeletedText.Text;
-        //}
-
-        //public void  ClickContinueBtn() => continueBtn.ClickMyElement();
-
     }
 }

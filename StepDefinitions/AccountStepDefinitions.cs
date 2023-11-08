@@ -19,20 +19,6 @@ namespace SpecFlowIndividualProject.StepDefinitions
             accountPage.ClickLogin();
         }
 
-
-        //[When(@"I Click Continue")]
-        //public void WhenIClickContinue()
-        //{
-        //    accountPage.ClickContinueButton();
-        //}
-
-        //[When(@"i Click the close button on the ad popup")]
-        //public void WhenIClickTheCloseButtonOnTheAdPopup()
-        //{
-        //    CloseAdIfPresent();
-        //}
-
-
         [Then(@"'([^']*)'text should be visible")]
         public void ThenTextShouldBeVisible(string prince)
         {
@@ -47,26 +33,5 @@ namespace SpecFlowIndividualProject.StepDefinitions
         {
             accountPage.ClickDeleteAccount();
         }
-
-        //[When(@"I close Ad pop up")]
-        //public void WhenICloseAdPopUp()
-        //{
-        //   CloseAdIfPresent();
-        //}
-
-
-        //[Then(@"ACCOUNT DELETED! text should be visible")]
-        //public void ThenACCOUNTDELETEDTextShouldBeVisible()
-        //{
-        //    string expectedText = "ACCOUNT DELETED!";
-        //    string actualtext = accountPage.GetAccountDeletedText();
-        //    Assert.AreEqual(expectedText, actualtext);
-        //}
-
-        //[Then(@"I click Continue button")]
-        //public void ThenIClickContinueButton()
-        //{
-        //    accountPage.ClickContinueBtn();
-        //}
     }
 }
