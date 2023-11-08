@@ -1,15 +1,4 @@
-﻿using BoDi;
-using Dynamitey;
-using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V116.Audits;
-using SpecFlowIndividualProject.Drivers;
-using SpecFlowIndividualProject.Support;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SpecFlowIndividualProject.Support;
 
 namespace SpecFlowIndividualProject.Pages
 {
